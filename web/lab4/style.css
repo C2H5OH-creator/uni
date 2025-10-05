@@ -1,0 +1,169 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.4;
+    /* padding: 40px 20px; */
+}
+
+
+/* Общие стили для всех полей */
+/* input {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    background-color: #f6f6f6;
+} */
+
+input {
+    padding: 15px; /* Увеличиваем внутренние отступы */
+    border: 2px solid #ddd;
+    border-radius: 2px; /* Более округлые углы */
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #f6f6f6;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 5px; /* Небольшой отступ между полями */
+}
+
+input:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+/* Заголовки с приятными отступами */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0 0 20px 0; /* Отступ снизу */
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 25px; /* Больше отступа для h2 */
+}
+
+/* Full Name*/
+.full-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* только 2 колонки для полей */
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.full-name h2 {
+    grid-column: 1 / -1; /* заголовок на всю ширину */
+    margin-bottom: 15px; /* отступ снизу от заголовка */
+    margin-right: 0; /* убираем отступ справа */
+}
+
+#first-name {
+    grid-column: 1; /* первое поле в первой колонке */
+}
+
+#last-name {
+    grid-column: 2; /* второе поле во второй колонке */
+}
+
+/* Address - главный контейнер с grid */
+.address {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 колонки */
+    grid-template-rows: auto auto auto; /* 3 строки: заголовок, street-address, остальные поля */
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.address h2 {
+    grid-column: 1 / -1; 
+    grid-row: 1; 
+    margin-bottom: 10px;
+}
+
+/* Street Address */
+#street-address {
+    grid-column: 1 / -1; 
+    grid-row: 2; 
+}
+
+/* City, State, Zip Code*/
+#city {
+    grid-column: 1;
+    grid-row: 3; 
+}
+
+#state {
+    grid-column: 2;
+    grid-row: 3; 
+}
+
+#zip-code {
+    grid-column: 3;
+    grid-row: 3; 
+}
+
+/* Contact Info*/
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* только 2 колонки для полей */
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contact-info h2 {
+    grid-column: 1 / -1; /* заголовок на всю ширину */
+    margin-bottom: 15px; /* отступ снизу от заголовка */
+    margin-right: 0; /* убираем отступ справа */
+}
+
+#email {
+    grid-column: 1; 
+}
+
+#phone {
+    grid-column: 2;
+}
+
+/* Questions */
+.questions {
+    margin-bottom: 30px; 
+}
+
+.questions textarea {
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 2px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #f6f6f6;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    resize: none;
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.4;
+}
+
+/* Кнопка */
+button {
+    background-color: #000000;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
