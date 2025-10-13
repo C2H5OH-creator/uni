@@ -49,7 +49,7 @@ h2 {
 /* Full Name*/
 .full-name {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* только 2 колонки для полей */
+    grid-template-columns: 1fr 1fr 1fr; /* только 2 колонки для полей */
     gap: 15px;
     align-items: center;
     margin-bottom: 30px;
@@ -61,12 +61,18 @@ h2 {
     margin-right: 0; /* убираем отступ справа */
 }
 
+
 #first-name {
     grid-column: 1; /* первое поле в первой колонке */
 }
 
 #last-name {
     grid-column: 2; /* второе поле во второй колонке */
+}
+
+#last-last-name {
+    grid-column: 3;
+
 }
 
 /* Address - главный контейнер с grid */
@@ -162,6 +168,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin-top: 20px;
 }
 
 button:hover {
