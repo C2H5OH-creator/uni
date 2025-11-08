@@ -53,13 +53,20 @@ main {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
+/* 
+.rectangle1 {
+    background-color: #8ef254;
+    width: 110%; 100% от ширины body 
+    height: 33.33%;
+} */
 
 .rectangle1 {
     background-color: #8ef254;
-    width: 100%; /* 100% от ширины body */
+    width: 120%;
+    margin-left: -10%;
+    margin-right: -10%; /* опционально для симметрии */
     height: 33.33%;
 }
-
 .rectangle2 {
     background-color: #f2af2d;
     width: 35%; 
@@ -77,24 +84,24 @@ main {
     width: 35%; 
     height: 33.33%;
 }
-
+/* 
 .rectangle5 {
     background-color: #f2c332;
     width: 21.66%; 
     height: 33.33%;
-}
+} */
 
 .rectangle6 {
     background-color: #94f2e5;
-    width: 21.66%; 
+    width: 65%; 
     height: 33.33%;
 }
 
-.rectangle7 {
+/* .rectangle7 {
     background-color: #f28a22;
     width: 21.66%; 
     height: 33.33%;
-}
+} */
 
 footer {
     background-color: #454545;
